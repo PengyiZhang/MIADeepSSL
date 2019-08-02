@@ -66,7 +66,7 @@ If you find this code useful for your research, please cite our paper:
 
 ```
 @article{
-  author    = {Pengyi Zhang, Yulin Deng, Xiaoying Tang, Yunxin Zhong, Xiaoqiong Li},
+  author    = {Pengyi Zhang, Yunxin Zhong, Yulin Deng, Xiaoying Tang, Xiaoqiong Li},
   title     = {A Survey on Deep Learning of Small Sample in Biomedical Image Analysis},
   journal   = {CoRR},
   volume    = {abs/1908.00473},
