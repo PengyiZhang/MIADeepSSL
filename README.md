@@ -1,6 +1,6 @@
 # MIADeepSSL: A Survey on Deep Learning of Small Sample in Biomedical Image Analysis
 
-This page is for the [A Survey on Deep Learning of Small Sample in Biomedical Image Analysis]().
+This page is for the [A Survey on Deep Learning of Small Sample in Biomedical Image Analysis](https://arxiv.org/abs/1908.00473).
 
 We build MIADeepSSL demos using surveyed small sample learning techniques for deep learning in Biomedical Image Analysis. 
 
@@ -42,7 +42,7 @@ The success of deep learning has been witnessed as a promising technique for com
 
 ### (4) attention mechanism
 
-TODO:
+COMING SOON:
 
 - [ ] Build MIADeepSSL demo using explanation techniques
 
@@ -69,9 +69,9 @@ If you find this code useful for your research, please cite our paper:
   author    = {Pengyi Zhang, Yulin Deng, Xiaoying Tang, Yunxin Zhong, Xiaoqiong Li},
   title     = {A Survey on Deep Learning of Small Sample in Biomedical Image Analysis},
   journal   = {CoRR},
-
+  volume    = {abs/1908.00473},
   year      = {2019},
-
+  ee        = {https://arxiv.org/abs/1908.00473}
 }
 
 ```
