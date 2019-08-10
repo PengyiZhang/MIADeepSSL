@@ -42,7 +42,7 @@ The success of deep learning has been witnessed as a promising technique for com
 
 ### (4) attention mechanism
 
-COMING SOON:
+TODO:
 
 - [ ] Build MIADeepSSL demo using explanation techniques
 
