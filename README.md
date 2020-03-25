@@ -16,9 +16,13 @@ The success of deep learning has been witnessed as a promising technique for com
 
 (1). pytorch >= 1.0
 
-## 1. explanation techniques
+## [1. explanation techniques](./00_Interpretability)
+
+We build demo based on two commonly used explanation methods for deep models, i.e., CAM (Class Activation Map) (Zhou et al., 2016) and Grad-CAM (Selvaraju et al., 2017), which are used to explain a DenseNet169 trained on [MURA (musculoskeletal radiographs, a large dataset of bone X-rays)](https://stanfordmlgroup.github.io/competitions/mura/).
 
 
+![img](00_Interpretability/images/image2.png)
+![img](00_Interpretability/images/image2_cam.png)
 
 ## 2. weakly supervised learning techniques
 
@@ -44,7 +48,7 @@ The success of deep learning has been witnessed as a promising technique for com
 
 TODO:
 
-- [ ] Build MIADeepSSL demo using explanation techniques
+- [x] Build MIADeepSSL demo using explanation techniques
 
 - [ ] Build MIADeepSSL demo using weakly supervised learning techniques
 
