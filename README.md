@@ -26,7 +26,51 @@ We build demo based on two commonly used explanation methods for deep models, i.
 
 ## 2. weakly supervised learning techniques
 
+We build two demos. One is weakly supervised object localization based on CAM and Grad-CAM introduced in [00_Interpretability](./00_Interpretability). The other one is weakly supervised semantic segmentation.
 
+### Weakly supervised object localization
+
+CAM built on the output of 4-st dense block
+
+![img](./01_WeaklySupervised/images/image2_cam.png)
+![img](./01_WeaklySupervised/images/image2_cam_p.png)
+
+
+### Weakly supervised semantic segmentation
+
+We build the demo of weakly supervised semantic segmentation on two methods：
+
+- [ ] method 1: representive framework: pre-processing (region growing / K-means clustering) + ENet + post-processin (DenseCRF / Graph Search)
+
+- [ ] method 2: [Size Constrained-CNN](https://arxiv.org/abs/1805.04628): size constrained loss + ENet
+
+![img](./01_WeaklySupervised/images/Figure_fs.png)
+
+(a) Full supervision: gt
+
+
+
+![img](./01_WeaklySupervised/images/Figure_ep.png)
+
+(b) weak supervision 1： erosion operation on gt
+
+
+
+![img](./01_WeaklySupervised/images/Figure_rand.png)
+
+(c) weak supervision 2： random point supervision 
+
+
+
+![img](./01_WeaklySupervised/images/Figure_centroid.png)
+
+(d) weak supervision 3： centroid point supervision 
+
+
+
+![img](./01_WeaklySupervised/images/Figure_box.png)
+
+(e) weak supervision 4： box supervision
 
 ## 3. transfer learning techniques
 
