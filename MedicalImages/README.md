@@ -7,6 +7,15 @@
 #### [Transversal T2-weighted MR image of the prostate](https://promise12.grand-challenge.org/Details/)
 
 
+There are 50 training cases available for download. These cases include a transversal T2-weighted MR image of the prostate. The training set is a representative set of the types of MR images acquired in a clinical setting. The data is multi-center and multi-vendor and has different acquistion protocols (e.g. differences in slice thickness, with/without endorectal coil). The set is selected such that there is a spread in prostate sizes and appearance. For each of the cases in the training set, a reference segmentation is also included.
+
+Each downloaded file contains MR scans, stored in Meta (or MHD/RAW) format. This format stores an image as an ASCII readable header file with extension .mhd and a separate binary file for the image data with extension .raw. This format is ITK compatible. Documentation is available here. Applications that can read the data are MeVisLab, SNAP, Slicer or ParaView. If you want to write your own code to read the data, note that in the header file you can find the dimensions of the scan and the voxel spacing. In the raw file the values for each voxel are stored consecutively with index running first over x, then y, then z. The voxel-to-world matrix is also available in this header file.
+
+The voxel type for T2-weighted images is SHORT (16 bit signed). The voxel type for the reference standard image is CHAR (8 bit signed). The reference standard image only contains the values 1 for prostate and 0 for background.
+
+
+![img](./images/prostate.png)
+
 
 #### [ACDC dataset](https://acdc.creatis.insa-lyon.fr/description/databases.html)
 
@@ -14,26 +23,32 @@ This set consists of 100 cine magneticresonance (MR) exams covering well defined
 
 ![img](./images/acdc-mr0.png)
 
-Dataset Format: 
-
 
 ### x-rays
 
-#### MURA
+#### [MURA](https://stanfordmlgroup.github.io/competitions/mura/)
 
-#### 
+![](images/mura.png)
+
+#### [ChestX-ray8](http://openaccess.thecvf.com/content_cvpr_2017/papers/Wang_ChestX-ray8_Hospital-Scale_Chest_CVPR_2017_paper.pdf)
+
+![](images/chestxray8.png)
 
 ### CT scans
 
-#### KITS
+#### [KITS](https://kits19.grand-challenge.org)
+
+![](images/KITS2019.jpg)
+
+![](images/KITS2019-3d.png)
 
 ### Endoscope/Dermatoscope
 
-#### EAD2019 
+#### [EAD2019](https://ead2019.grand-challenge.org/)
+![](images/EAD2019.jpg)
 
-
-#### ISIC2019
-
+#### [ISIC2019](https://challenge2019.isic-archive.com/)
+![](images/ISIC2019.jpg)
 
 
 
