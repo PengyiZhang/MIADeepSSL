@@ -1,5 +1,8 @@
 # Aewsome Medical Images
 
+
+
+
 ## 1. Modalities
 
 ### 1.1 Retinal fundus images
@@ -11,11 +14,11 @@ The DRIVE dataset was obtained from a diabetic retinopathy screening program in 
 
 #### (2) [STARE dataset](http://www.ces.clemson.edu/~ahoover/stare/)
 
-The STARE dataset consists of 20 retinal fundus slides captured by a TopCon TRV-50 fundus camera. All the images have the size of $700 \times 605$. Half of the dataset comprises images of healthy subjects,and the rest contains the pathological cases. As widely known, the pathological example makes the segmentation more challenging.
+The STARE dataset consists of 20 retinal fundus slides captured by a TopCon TRV-50 fundus camera. All the images have the size of 700 x 605. Half of the dataset comprises images of healthy subjects,and the rest contains the pathological cases. As widely known, the pathological example makes the segmentation more challenging.
 
 #### (3) [CHASE dataset](https://blogs.kingston.ac.uk/retinal/chasedb1/)
 
-The CHASE dataset is a subset of retinal images of multiethnic children from the Child Heart and Health Study in England and comprises 28 images with a resolution of $1280 \times 960$ pixels.
+The CHASE dataset is a subset of retinal images of multiethnic children from the Child Heart and Health Study in England and comprises 28 images with a resolution of 1280 x 960 pixels.
 
 #### (4) [ODIR dataset](https://odir2019.grand-challenge.org/dataset/)
 
@@ -24,20 +27,38 @@ We collected a structured ophthalmic database of 5,000 patients with age, color 
 ![](images/retina.jpg)
 
 
-### 1.2 OCT
+### 1.2 Retinal OCT Images (optical coherence tomography)
+
+#### (1) [kermany2018](https://www.kaggle.com/paultimothymooney/kermany2018)
+
+![](images/oct.jpeg)
 
 ### 1.3 Ultrasound
 
+#### (1) [ultrasound-nerve-segmentation](https://www.kaggle.com/c/ultrasound-nerve-segmentation/data)
+
+The task in this competition is to segment a collection of nerves called the Brachial Plexus (BP) in ultrasound images. You are provided with a large training set of images where the nerve has been manually annotated by humans. Annotators were trained by experts and instructed to annotate images where they felt confident about the existence of the BP landmark.
+
+Please note these important points:
+
+The dataset contains images where the BP is not present. Your algorithm should predict no pixel values in these cases.
+As with all human-labeled data, you should expect to find noise, artifacts, and potential mistakes in the ground truth. Any individual mistakes (not affecting the broader integrity of the competition) will be left as is.
+Due to the way the acquisition machine generates image frames, you may find identical images or very similar images.
+In order to reduce the submission file sizes, this competition uses run-length encoding (RLE) on the pixel values. The details of how to use RLE are described on the 'Evaluation' page.
+
+![](images/ultrasound.png)
 
 
 ### 1.4 Histopathological images
 
+#### (1) [Automatic Cancer Detection and Classification in Whole-slide Lung Histopathology (ACDC@LUNGHP) challenge](https://acdc-lunghp.grand-challenge.org/)
 
+![](images/acdc-hist.jpeg)
 
 ### 1.5 Magnetic resonance imaging (MR)
 
 
-#### [Transversal T2-weighted MR image of the prostate](https://promise12.grand-challenge.org/Details/)
+#### (1) [Transversal T2-weighted MR image of the prostate](https://promise12.grand-challenge.org/Details/)
 
 
 There are 50 training cases available for download. These cases include a transversal T2-weighted MR image of the prostate. The training set is a representative set of the types of MR images acquired in a clinical setting. The data is multi-center and multi-vendor and has different acquistion protocols (e.g. differences in slice thickness, with/without endorectal coil). The set is selected such that there is a spread in prostate sizes and appearance. For each of the cases in the training set, a reference segmentation is also included.
@@ -50,49 +71,58 @@ The voxel type for T2-weighted images is SHORT (16 bit signed). The voxel type f
 ![img](./images/prostate.png)
 
 
-#### [ACDC dataset](https://acdc.creatis.insa-lyon.fr/description/databases.html)
+#### (2) [ACDC dataset](https://acdc.creatis.insa-lyon.fr/description/databases.html)
 
 This set consists of 100 cine magneticresonance (MR) exams covering well defined pathologies:  dilated cardiomyopathy, hypertrophiccardiomyopathy, myocardial infarction with altered left ventricular ejection fraction and abnormalright ventricle.  It also included normal subjects.  The exams were acquired in breath-hold with aretrospective or prospective gating and a SSFP sequence in 2-chambers, 4-chambers and in short-axisorientations. A series of short-axis slices cover the LV from the base to the apex, with a thickness of5 to 8 mm and an inter-slice gap of 5 mm. The spatial resolution goes from 0.83 to 1.75 mm2/pixel
 
 ![img](./images/acdc-mr0.png)
 
 
-### x-rays
+### 1.6 x-rays
 
-#### [MURA](https://stanfordmlgroup.github.io/competitions/mura/)
+#### (1) [MURA](https://stanfordmlgroup.github.io/competitions/mura/)
 
 ![](images/mura.png)
 
-#### [ChestX-ray8](http://openaccess.thecvf.com/content_cvpr_2017/papers/Wang_ChestX-ray8_Hospital-Scale_Chest_CVPR_2017_paper.pdf)
+#### (2) [ChestX-ray8](http://openaccess.thecvf.com/content_cvpr_2017/papers/Wang_ChestX-ray8_Hospital-Scale_Chest_CVPR_2017_paper.pdf)
 
 ![](images/chestxray8.png)
 
-### CT scans
+#### (3) [mammography](https://www.kaggle.com/kmader/mias-mammography)
 
-#### [KITS](https://kits19.grand-challenge.org)
+![](images/mdb001.png)
+
+### 1.7 CT scans
+
+#### (1) [KITS](https://kits19.grand-challenge.org)
 
 ![](images/KITS2019.jpg)
 
 ![](images/KITS2019-3d.png)
 
-### Endoscope/Dermatoscope
 
-#### [EAD2019](https://ead2019.grand-challenge.org/)
+### [1.8 Positron emission tomography (PET) / PET-CT](https://www.mayoclinic.org/tests-procedures/pet-scan/about/pac-20385078)
+
+![](images/PET-gray.png)
+![](images/PET-jet.png)
+
+### 1.9 [single-photon emission computerized tomography (SPECT)](https://www.mayoclinic.org/tests-procedures/spect-scan/about/pac-20384925)
+
+
+### 1.10 Endoscope/Dermatoscope
+
+#### (1) [EAD2019](https://ead2019.grand-challenge.org/)
 ![](images/EAD2019.jpg)
 
-#### [ISIC2019](https://challenge2019.isic-archive.com/)
+#### (2) [ISIC2019](https://challenge2019.isic-archive.com/)
+
 ![](images/ISIC2019.jpg)
 
 
-
-
-### 
-
-
-
-
-
 Find more -> **[go down](#medical-imaging-datasets)**
+
+Explore -> **[go down](#CT/MRI/PET-CT/ULTRASOUND)**
+
 
 ## 2. [Medical Image File Formats](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3948928/)
 
@@ -251,3 +281,18 @@ user guide: http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.100
 * Challenges in global health and development problems https://grandchallenges.org/#/map
 * Current state of the art of most used computer vision datasets: Who is the best at X? http://rodrigob.github.io/are_we_there_yet/build/
 * Automatic Non-rigid Histological Image Registration (ANHIR) challenge https://anhir.grand-challenge.org/
+
+
+# CT/MRI/PET-CT/ULTRASOUND
+
+The main consideration for doctors regarding which test to choose (CT, PET-CT, MRI, or Ultrasound) is the clinical question that needs to be answered. What are they looking for? What are they trying to diagnose? 
+
+CT (Computerized Tomography): This is a digital imaging test that uses X-rays that are sent together to create a cut-image using advanced computer programs. This test is intended for imaging of most of the internal organs, including the bones. The test time is short however, its main disadvantage is the high level of radiation necessary in order to create the image. 
+
+MRI (Magnetic Resonance Imaging): This is a test using advanced technology that receives an image as a result of a strong magnetic field created around the patient. This test is sensitive to processes in soft tissues, especially the nervous system, the muscles, the bone marrow etc. This imaging method is less suitable for imaging of bones, intestines, and other organs that contain air. Its disadvantages: longer test time than CT, and high cost due to the device maintenance. 
+
+PET-CT (Positron Emission Tomography – Computed Tomography): This test is mainly intended to map cancer cells in the body. Prior to the test, the patient is injected with radioactive glucose, which is absorbed by the cancer cells in an enhanced manner in comparison to regular cells, and the radiation is received by the special camera, and this creates an image of the cancer dispersion in the body. The test’s disadvantages, besides the radiation involved, is that also tissues with infection will have increased reception and make it difficult to accurately diagnose. For this reason, this is usually performed together with the CT test, and together a better picture of the situation is received. 
+
+US (Ultrasound): This test creates imaging of various organs in the body, using very high frequency radio waves (which the human ear cannot detect), and these are returned to the device, which translates it into an image. The test is usually performed in order to see the internal organs, their shape, size, how they are functioning, and whether they have some sort of injury. Its advantage is that it is not accompanied by radiation exposure, but its disadvantage is that it is not suitable for scanning organs that contain air, like the stomach, the intestines, or skeletal imaging.
+
+It is important to mention that according to the State Comptroller Report on the topic, the number of mistakes in imaging interpretation can sometimes reach about 30%, and so if there is any doubt about the interpretation, it is recommended to receive a second opinion from another radiologist. If you have questions about your imaging tests, you are invited to ask them in the ”Ask the Imaging Expert” in the Belong – Beating Cancer Together app. 
