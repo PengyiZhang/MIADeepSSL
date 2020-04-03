@@ -2,7 +2,40 @@
 
 ## 1. Modalities
 
-### MR
+### 1.1 Retinal fundus images
+
+#### (1) [DRIVE dataset](http://www.isi.uu.nl/Research/Databases/DRIVE/)
+
+The DRIVE dataset was obtained from a diabetic retinopathy screening program in the Netherlands which consisted of 400 diabetic subjects between 25 - 90 years of age, but only 40 images were randomly selected for training and testing which both contain 20 images. For the 40 images, there are 7 images show signs of mild early diabetic retinopathy. In addition, all the images were made by 3CCD camera and each has size of 565  584. For each image, a corresponding mask image is also provided.
+
+
+#### (2) [STARE dataset](http://www.ces.clemson.edu/~ahoover/stare/)
+
+The STARE dataset consists of 20 retinal fundus slides captured by a TopCon TRV-50 fundus camera. All the images have the size of $700 \times 605$. Half of the dataset comprises images of healthy subjects,and the rest contains the pathological cases. As widely known, the pathological example makes the segmentation more challenging.
+
+#### (3) [CHASE dataset](https://blogs.kingston.ac.uk/retinal/chasedb1/)
+
+The CHASE dataset is a subset of retinal images of multiethnic children from the Child Heart and Health Study in England and comprises 28 images with a resolution of $1280 \times 960$ pixels.
+
+#### (4) [ODIR dataset](https://odir2019.grand-challenge.org/dataset/)
+
+We collected a structured ophthalmic database of 5,000 patients with age, color fundus photographs from left and right eyes and doctors' diagnostic keywords from doctors (in short, ODIR-5K). This dataset is ‘‘real-life’’ set of patient information collected by Shanggong Medical Technology Co., Ltd. from different hospitals/medical centers in China. In these institutions, fundus images are captured by various cameras in the market, such as Canon, Zeiss and Kowa, resulting into varied image resolutions. Patient identifying information will be removed. Annotations are labeled by trained human readers with quality control management. They classify patient into eight labels including normal (N), diabetes (D), glaucoma (G), cataract (C), AMD (A), hypertension (H), myopia (M) and other diseases/abnormalities (O) based on both eye images and additionally patient age. The publishing of this dataset follows the ethical and privacy rules of China. Table 1 shows one record from ODIR-5K dataset.  Note: In the testing round, the diagnostic keywords will not be provided.
+
+![](images/retina.jpg)
+
+
+### 1.2 OCT
+
+### 1.3 Ultrasound
+
+
+
+### 1.4 Histopathological images
+
+
+
+### 1.5 Magnetic resonance imaging (MR)
+
 
 #### [Transversal T2-weighted MR image of the prostate](https://promise12.grand-challenge.org/Details/)
 
@@ -55,6 +88,11 @@ This set consists of 100 cine magneticresonance (MR) exams covering well defined
 
 ### 
 
+
+
+
+
+Find more -> **[go down](#medical-imaging-datasets)**
 
 ## 2. [Medical Image File Formats](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3948928/)
 
@@ -139,3 +177,77 @@ Dicom can only store pixel values as integers. supports compressed image data th
 
 
 Find more -> [https://itk.org/Wiki/ITK/File_Formats](https://itk.org/Wiki/ITK/File_Formats)
+
+
+----------------------------
+
+# medical-imaging-datasets
+
+* A list of Medical imaging datasets. Source : https://sites.google.com/site/aacruzr/image-datasets
+* An additional, possibly overlapping list can be found at : https://github.com/beamandrew/medical-data
+
+### Multimodal databases
+
+* Center for Invivo Microscopy (CIVM), Embrionic and Neonatal Mouse (H&E, MR) http://www.civm.duhs.duke.edu/devatlas/ 
+user guide: http://www.civm.duhs.duke.edu/devatlas/UserGuide.pdf
+* LONI image data archive https://ida.loni.usc.edu/services/Menu/IdaData.jsp?project=
+* Radiology (Ultrasound, Mammographs, X-Ray, CT, MRI, fMRI, etc.)
+* Collaborative Informatics and Neuroimaging Suite (COINS) https://portal.mrn.org/micis/index.php?subsite=dx
+* The Cancer Imaging Archive (TCIA) http://www.cancerimagingarchive.net/ (Collections)
+* Alzheimer’s Disease Neuroimaging Initiative (ADNI) http://adni.loni.ucla.edu/
+* The Open Access Series of Imaging Studies (OASIS) http://www.oasis-brains.org/
+* Breast Cancer Digital Repository https://bcdr.eu/
+* DDSM: Digital Database for Screening Mammography http://marathon.csee.usf.edu/Mammography/Database.html
+* The Mammographic Image Analysis Society (MIAS) mini-database http://peipa.essex.ac.uk/info/mias.html
+* Mammography Image Databases 100 or more images of mammograms with ground truth. Additional images available by request, and links to several other mammography databases are provided http://marathon.csee.usf.edu/Mammography/Database.html
+* NLM HyperDoc Visible Human Project color, CAT and MRI image samples - over 30 images http://www.nlm.nih.gov/research/visible/visible_human.html
+* CT Scans for Colon Cancer https://wiki.cancerimagingarchive.net/display/Public/CT+COLONOGRAPHY#e88604ec5c654f60a897fa77906f88a6
+
+### Histology and Histopathology (H&E, IHQ, ...)
+
+* The Cancer Genome Atlas (TCGA) http://cancergenome.nih.gov/ https://tcga-data.nci.nih.gov/tcga/
+* International Cancer Genome Consortium http://icgc.org, (Data portal) http://dcc.icgc.org/
+* Stanford Tissue Microarray Database (TMA) http://tma.im
+* MITOS dataset http://www.ipal.cnrs.fr/event/icpr-2012
+* Cancer Image Database (caIMAGE) https://emice.nci.nih.gov/caimage
+* DPA’s Whole Slide Imaging Repository https://digitalpathologyassociation.org/whole-slide-imaging-repository
+* ITK Analysis of Large Histology Datasets http://www.na-mic.org/Wiki/index.php/ITK_Analysis_of_Large_Histology_Datasets
+* Histology Photo Album http://www.histology-world.com/photoalbum/thumbnails.php?album=52
+* Slide Library of Virtual pathology, University of Leeds http://www.virtualpathology.leeds.ac.uk/
+* Aperio Images http://images.aperio.com/
+* HAPS Histology Image Database http://hapshistology.wikifoundry.com/
+* Microscopy (Cell, Cytology, Biology, Protein, Molecular, Fluorescence, etc.)
+* BDGP images from the FlyExpress database www.flyexpress.net
+* The UCSB Bio-Segmentation Benchmark dataset http://www.bioimage.ucsb.edu/research/biosegmentation
+* Pap Smear database http://mde-lab.aegean.gr/index.php/downloads
+* Histology (CIMA) dataset http://cmp.felk.cvut.cz/~borovji3/?page=dataset
+* ANHIR dataset https://anhir.grand-challenge.org/
+
+
+* Genome RNAi dataset http://www.genomernai.org/
+* Chinese Hamster Ovary cells (CHO) dataset http://www.chogenome.org/data.html
+* Locate Endogenus mouse sub-cellular organelles (END) database http://locate.imb.uq.edu.au/
+* 2D HeLa dataset (HeLa) dataset https://ome.grc.nia.nih.gov/iicbu2008/hela/index.html
+* Allen Brain Atlas http://www.brain-map.org/
+* 1000 Functional Connectomes Project http://fcon_1000.projects.nitrc.org/
+* The Cell Centered Database (CCDB) https://library.ucsd.edu/dc/collection/bb5940732k
+* The Encyclopedia of DNA Elements (ENCODE) http://genome.ucsc.edu/ENCODE/ 
+user guide: http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.1001046
+* The Human Protein Atlas: http://www.proteinatlas.org/
+* DRIVE: Digital Retinal Images for Vessel Extraction http://www.isi.uu.nl/Research/Databases/DRIVE/ (Ground truth)
+* El Salvador Atlas of Gastrointestinal VideoEndoscopy Images and Videos of hi-res of studies taken from Gastrointestinal Video endoscopy http://www.gastrointestinalatlas.com/
+
+### Databases you can use for benchmarking 
+
+* http://peipa.essex.ac.uk/benchmark/databases/
+* http://mulan.sourceforge.net/datasets-mlc.html
+* https://archive.ics.uci.edu/ml/datasets.php
+* Datasets reporting formats for pathologists http://www.rcpath.org/publications-media/publications/datasets
+* DermNet - Skin disease atlas (23 image classes and 23,000 images): http://www.dermnet.com/
+
+### State of the art / Challenges
+
+* Grand Challenges in Medical Image Analysis https://grand-challenge.org/
+* Challenges in global health and development problems https://grandchallenges.org/#/map
+* Current state of the art of most used computer vision datasets: Who is the best at X? http://rodrigob.github.io/are_we_there_yet/build/
+* Automatic Non-rigid Histological Image Registration (ANHIR) challenge https://anhir.grand-challenge.org/
