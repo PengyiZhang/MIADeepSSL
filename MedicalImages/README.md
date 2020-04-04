@@ -1,15 +1,13 @@
 # Aewsome Medical Images
 
 
-
-
 ## 1. Modalities
 
 ### 1.1 Retinal fundus images
 
 #### (1) [DRIVE dataset](http://www.isi.uu.nl/Research/Databases/DRIVE/)
 
-The DRIVE dataset was obtained from a diabetic retinopathy screening program in the Netherlands which consisted of 400 diabetic subjects between 25 - 90 years of age, but only 40 images were randomly selected for training and testing which both contain 20 images. For the 40 images, there are 7 images show signs of mild early diabetic retinopathy. In addition, all the images were made by 3CCD camera and each has size of 565  584. For each image, a corresponding mask image is also provided.
+The DRIVE dataset was obtained from a diabetic retinopathy screening program in the Netherlands which consisted of 400 diabetic subjects between 25 - 90 years of age, but only 40 images were randomly selected for training and testing which both contain 20 images. For the 40 images, there are 7 images show signs of mild early diabetic retinopathy. In addition, all the images were made by 3CCD camera and each has size of 565 x 584. For each image, a corresponding mask image is also provided.
 
 
 #### (2) [STARE dataset](http://www.ces.clemson.edu/~ahoover/stare/)

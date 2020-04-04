@@ -16,6 +16,10 @@ The success of deep learning has been witnessed as a promising technique for com
 
 (1). pytorch >= 1.0
 
+
+
+
+
 ## [1. explanation techniques](./00_Interpretability)
 
 We build demo based on two commonly used explanation methods for deep models, i.e., CAM (Class Activation Map) (Zhou et al., 2016) and Grad-CAM (Selvaraju et al., 2017), which are used to explain a DenseNet169 trained on [MURA (musculoskeletal radiographs, a large dataset of bone X-rays)](https://stanfordmlgroup.github.io/competitions/mura/).
@@ -42,13 +46,11 @@ We build the demo of weakly supervised semantic segmentation on two methods：
 
 - [ ] method 1: representive framework: pre-processing (region growing / K-means clustering) + ENet + post-processin (DenseCRF / Graph Search)
 
-- [ ] method 2: [Size Constrained-CNN](https://arxiv.org/abs/1805.04628): size constrained loss + ENet
+- [x] method 2: [Size Constrained-CNN](https://arxiv.org/abs/1805.04628): size constrained loss + ENet
 
 ![img](./01_WeaklySupervised/images/Figure_fs.png)
 
 (a) Full supervision: gt
-
-
 
 ![img](./01_WeaklySupervised/images/Figure_ep.png)
 
@@ -61,26 +63,31 @@ We build the demo of weakly supervised semantic segmentation on two methods：
 (c) weak supervision 2： random point supervision 
 
 
-
 ![img](./01_WeaklySupervised/images/Figure_centroid.png)
 
 (d) weak supervision 3： centroid point supervision 
-
-
 
 ![img](./01_WeaklySupervised/images/Figure_box.png)
 
 (e) weak supervision 4： box supervision
 
+
+------------
+
 ## 3. transfer learning techniques
 
 
 
+------------
+
 ## 4. active learning techniques
 
 
+------------
+
 
 ## 5. miscellaneous techniques
+
 
 ### (1) data augmentation
 
@@ -90,11 +97,50 @@ We build the demo of weakly supervised semantic segmentation on two methods：
 
 ### (4) attention mechanism
 
+
+
+------------
+
+## [0. medical images](./MedicalImages)
+
+- Retinal fundus images
+
+![](MedicalImages/images/retina.jpg)
+
+- Retinal OCT Images (optical coherence tomography)
+
+![](MedicalImages/images/oct.jpeg)
+
+- Ultrasound
+
+![](MedicalImages/images/ultrasound.png)
+
+- Histopathological images
+
+![](MedicalImages/images/acdc-hist.jpeg)
+
+- Magnetic resonance imaging (MR)
+
+![](MedicalImages/images/acdc-mr0.png)
+
+- x-rays
+
+![](MedicalImages/images/chestxray8.png)
+
+- CT
+
+![](MedicalImages/images/KITS2019-3d.png)
+
+
+---------------
+
+
+
 TODO:
 
 - [x] Build MIADeepSSL demo using explanation techniques
 
-- [ ] Build MIADeepSSL demo using weakly supervised learning techniques
+- [x] Build MIADeepSSL demo using weakly supervised learning techniques
 
 - [ ] Build MIADeepSSL demo using transfer learning techniques
 
@@ -107,6 +153,7 @@ TODO:
 - [ ] Build MIADeepSSL demo using domain knowledge
 
 
+----------
 
 ## Citation
 
