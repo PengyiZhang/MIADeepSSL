@@ -44,7 +44,38 @@ CAM built on the output of 4-st dense block
 
 We build the demo of weakly supervised semantic segmentation on two methods：
 
-- [ ] method 1: representive framework: pre-processing (region growing / K-means clustering) + ENet + post-processin (DenseCRF / Graph Search)
+- [x] method 1: representive framework: pre-processing (region growing / K-means clustering) + ENet + post-processin (DenseCRF / Graph Search)
+
+
+![img](./01_WeaklySupervised/images/patient006_01_0_6.png)
+
+![img](./01_WeaklySupervised/images/gt.png)
+
+(a) gt
+
+
+![img](./01_WeaklySupervised/images/erosion-val.png)
+
+(b) weak supervision： erosion operation on gt
+
+![img](./01_WeaklySupervised/images/regiongrowth.png)
+
+(c) region growth
+
+
+
+(d) output of ENet
+
+
+(e) DenseCRF on the output of ENet
+
+
+
+
+
+
+
+
 
 - [x] method 2: [Size Constrained-CNN](https://arxiv.org/abs/1805.04628): size constrained loss + ENet
 
@@ -55,7 +86,6 @@ We build the demo of weakly supervised semantic segmentation on two methods：
 ![img](./01_WeaklySupervised/images/Figure_ep.png)
 
 (b) weak supervision 1： erosion operation on gt
-
 
 
 ![img](./01_WeaklySupervised/images/Figure_rand.png)

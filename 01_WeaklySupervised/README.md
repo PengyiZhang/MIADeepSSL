@@ -33,7 +33,8 @@ Here, we show how to embed prior knowledge into the training of deep models on w
 
 We build the demo of weakly supervised semantic segmentation on two methods：
 
-- [ ] method 1: representive framework: pre-processing (region growing / K-means clustering) + ENet + post-processin (DenseCRF / Graph Search)
+- [x] method 1: representive framework: pre-processing (region growing / K-means clustering) + ENet + post-processin (DenseCRF / Graph Search)
+
 
 - [x] method 2: [Size Constrained-CNN](https://arxiv.org/abs/1805.04628): size constrained loss + ENet
 
@@ -117,3 +118,30 @@ We used the training set from the publicly available data of [the 2017 ACDC Chal
 - (8). **3d_sizeloss_random**:  weak supervision (random point), partial cross entropy loss + 0.02*penalty (**3d size constrain**, size per 3D sample * [100%,100%]), val_dice: 0.7949
 
 ![img](./images/8.result_3dsizerandom.png)
+
+
+#### 3. region growing + ENet + DenseCRF
+
+
+![img](./images/patient006_01_0_6.png)
+
+![img](./images/gt.png)
+
+(a) gt
+
+
+![img](./images/erosion-val.png)
+
+(b) weak supervision： erosion operation on gt
+
+![img](./images/regiongrowth.png)
+
+(c) region growth
+
+
+
+(d) output of ENet
+
+
+(e) DenseCRF on the output of ENet
+
