@@ -62,10 +62,11 @@ We build the demo of weakly supervised semantic segmentation on two methods：
 
 (c) region growth
 
-
+![img](./01_WeaklySupervised/images/probs.png)
 
 (d) output of ENet
 
+![img](./01_WeaklySupervised/images/result_crf.png)
 
 (e) DenseCRF on the output of ENet
 

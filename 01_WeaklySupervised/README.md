@@ -129,19 +129,26 @@ We used the training set from the publicly available data of [the 2017 ACDC Chal
 
 (a) gt
 
-
 ![img](./images/erosion-val.png)
 
 (b) weak supervision： erosion operation on gt
 
 ![img](./images/regiongrowth.png)
 
-(c) region growth
+(c) region growth: using the mean±3*std of given foreground pixel values as threshold
+
+----------------------------------------
+
+##### first training results
+
+![img](./images/probs.png)
+
+(d) output of ENet (probability), val_dice: 0.6850
 
 
+![img](./images/result_crf.png)
 
-(d) output of ENet
+(e) DenseCRF on the output of ENet, `(sxy=3, schan=10)`, val_dice: Dice: 0.7146
 
 
-(e) DenseCRF on the output of ENet
 
