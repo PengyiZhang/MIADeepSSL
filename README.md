@@ -18,8 +18,6 @@ The success of deep learning has been witnessed as a promising technique for com
 
 
 
-
-
 ## [1. explanation techniques](./00_Interpretability)
 
 We build demo based on two commonly used explanation methods for deep models, i.e., CAM (Class Activation Map) (Zhou et al., 2016) and Grad-CAM (Selvaraju et al., 2017), which are used to explain a DenseNet169 trained on [MURA (musculoskeletal radiographs, a large dataset of bone X-rays)](https://stanfordmlgroup.github.io/competitions/mura/).
@@ -46,68 +44,18 @@ We build the demo of weakly supervised semantic segmentation on two methods：
 
 - [x] method 1: representive framework: pre-processing (region growing / K-means clustering) + ENet + post-processin (DenseCRF / Graph Search)
 
-
-![img](./01_WeaklySupervised/images/patient006_01_0_6.png)
-
-![img](./01_WeaklySupervised/images/gt.png)
-
-(a) gt
-
-
-![img](./01_WeaklySupervised/images/erosion-val.png)
-
-(b) weak supervision： erosion operation on gt
-
-![img](./01_WeaklySupervised/images/regiongrowth.png)
-
-(c) region growth
-
-![img](./01_WeaklySupervised/images/probs.png)
-
-(d) output of ENet
-
-![img](./01_WeaklySupervised/images/result_crf.png)
-
-(e) DenseCRF on the output of ENet
-
-
-
-
-
-
-
-
-
 - [x] method 2: [Size Constrained-CNN](https://arxiv.org/abs/1805.04628): size constrained loss + ENet
-
-![img](./01_WeaklySupervised/images/Figure_fs.png)
-
-(a) Full supervision: gt
-
-![img](./01_WeaklySupervised/images/Figure_ep.png)
-
-(b) weak supervision 1： erosion operation on gt
-
-
-![img](./01_WeaklySupervised/images/Figure_rand.png)
-
-(c) weak supervision 2： random point supervision 
-
-
-![img](./01_WeaklySupervised/images/Figure_centroid.png)
-
-(d) weak supervision 3： centroid point supervision 
-
-![img](./01_WeaklySupervised/images/Figure_box.png)
-
-(e) weak supervision 4： box supervision
 
 
 ------------
 
 ## 3. transfer learning techniques
 
+We build the demo of transfer learning techniques on two methods：
 
+- [ ] method 1: Domain Adaptation through Adversarial Training
+
+- [ ] method 2: Multitask learning
 
 ------------
 
@@ -135,32 +83,12 @@ We build the demo of weakly supervised semantic segmentation on two methods：
 ## [0. medical images](./MedicalImages)
 
 - Retinal fundus images
-
-![](MedicalImages/images/retina.jpg)
-
 - Retinal OCT Images (optical coherence tomography)
-
-![](MedicalImages/images/oct.jpeg)
-
 - Ultrasound
-
-![](MedicalImages/images/ultrasound.png)
-
 - Histopathological images
-
-![](MedicalImages/images/acdc-hist.jpeg)
-
 - Magnetic resonance imaging (MR)
-
-![](MedicalImages/images/acdc-mr0.png)
-
 - x-rays
-
-![](MedicalImages/images/chestxray8.png)
-
 - CT
-
-![](MedicalImages/images/KITS2019-3d.png)
 
 
 ---------------
