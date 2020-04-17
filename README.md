@@ -51,11 +51,15 @@ We build the demo of weakly supervised semantic segmentation on two methods：
 
 ## 3. transfer learning techniques
 
-We build the demo of transfer learning techniques on two methods：
+We build the demo of transfer learning techniques：
 
-- [ ] method 1: Domain Adaptation through Adversarial Training
+- [x] method 1: [Domain Adaptation through Adversarial Training](https://arxiv.org/pdf/1910.07638.pdf)
 
-- [ ] method 2: Multitask learning
+In this demo, two retinal fundus image datasets acquired with two different fundus cameras are regarded as source domain and target domain samples. Ground-true masks are provided only in source domain.
+
+![img](./02_TransferLearning/images/g0001.jpg)
+![img](./02_TransferLearning/images/V0001.jpg)
+
 
 ------------
 
