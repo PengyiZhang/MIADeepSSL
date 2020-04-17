@@ -39,7 +39,7 @@ original image：
 
 GT：
 
-![img](./images/V0001.bmp)
+![img](./images/V0001_GT.bmp)
 
 Result：
 
